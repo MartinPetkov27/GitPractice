@@ -16,5 +16,34 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void lbTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add("Dollars");
+            comboBox1.Items.Add("Euros");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Euros")
+            {
+                label2.Text = ((double.Parse(textBox1.Text)*0.55).ToString());
+            }
+        }
     }
 }
